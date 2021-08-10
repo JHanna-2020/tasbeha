@@ -19,7 +19,7 @@ $(document).ready(function(){
 		$.get(
 			"https://www.googleapis.com/youtube/v3/playlistItems", {
 				part:'snippet',
-				maxResults:50,
+				maxResults:500,
 				playlistId:pid,
 				key:'AIzaSyDIqtXf2x_T8N_t1oCMSZqTMnmX_thaIn4    ' },
 				function(data) {
@@ -33,7 +33,7 @@ $(document).ready(function(){
 								          '<img class="v-img" src="'+vid_thumb+'"/>'+
 								          '<i class="play-btn fa fa-play"></i>'+
 								          '<div class="v-title">'+vid_title+'</div>'+
-								        //'</a>'+
+								        '</a>'+
 								      '</div>'
 						vid_container.append(videoEle);
 					});
